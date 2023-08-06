@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tic Tac Toe</title>
+    <link rel="stylesheet" href="ttt.css" type="text/css">
+</head>
+
+<body>
+    <section>
+        <form onsubmit="return false">
+            <label>Matrix
+                <select id="matrix">
+                    <option value="3">3x3</option>
+                    <!-- <option value="5">5x5</option> -->
+                </select>
+            </label>
+            <br>
+            <label>Weapon
+                <select id="weapon">
+                    <option value="0">X</option>
+                    <option value="1">O</option>
+                    <option value="2">Bomb</option>
+                    <option value="3">Love</option>
+                    <option value="4">Drumstick</option>
+                    <option value="5">Brain</option>
+                    <option value="6">Magic Wand</option>
+                    <option value="7">Wrench</option>
+                    <option value="8">Money</option>
+                    <option value="9">Math</option>
+                    <option value="10">Truck-kun</option>
+                </select>
+            </label>
+        </form>
+    </section>
+
+    <section id="playground">
+        <h1>
+            COMPUTER&nbsp;&nbsp;&nbsp;
+            <span id="comp-weapon">
+                <i class="fa-solid fa-o"></i>
+            </span>
+        </h1>
+        <table>
+            <tbody id="board"></tbody>
+        </table>
+        <h1>
+            YOU&nbsp;&nbsp;&nbsp;
+            <span id="your-weapon">
+                <i class="fa-solid fa-x"></i>
+            </span>
+        </h1>
+        <h1 id="result"></h1>
+    </section>
+
+    <section>
+        <button id="play-btn">PLAY</button>
+        <button id="reset-btn">RESET</button>
+    </section>
+
+    <script src="https://kit.fontawesome.com/d83c12719b.js" crossorigin="anonymous"></script>
+    <script src="ttt.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 95vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: #f7e7be;
+  background: #32405b;
+}
+
+section {
+  margin: 20px;
+}
+
+#play-btn {
+  font-size: 2rem;
+  color: #00777b;
+  background: #fe9e84;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#play-btn:active {
+  background: rgba(254, 158, 132, 0.5);
+}
+
+#shuffle-btn,
+#get-card-btn,
+#reset-btn {
+  font-size: 1.25rem;
+  color: #fe9e84;
+  background: #00777b;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#shuffle-btn:active,
+#get-card-btn:active,
+#reset-btn:active {
+  background: rgba(0, 119, 123, 0.5);
+}
+
+#question-btn {
+  margin: 20px;
+  border: none;
+  font-size: 2rem;
+  color: #f7e7be;
+  background: transparent;
+  cursor: pointer;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+#instructions {
+  padding: 30px 50px;
+  display: none;
+  color: #32405b;
+  background: #f7e7be;
+}
+#instructions h1 {
+  text-align: center;
+  color: #fe9e84;
+}
+#instructions h1 i {
+  color: #00777b;
+}
+
+#playground {
+  margin: 50px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#playground #comp-set,
+#playground #your-set {
+  margin: 20px;
+  width: 700px;
+  height: 350px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+#playground #comp-set .hero-card,
+#playground #your-set .hero-card {
+  width: 225px;
+  height: 300px;
+  cursor: pointer;
+}
+#playground #comp-set .hero-card .hero-name,
+#playground #your-set .hero-card .hero-name {
+  margin: 20px 10px;
+  border-radius: 20px;
+  padding: 10px;
+  font-weight: 800;
+  text-align: center;
+  color: #00777b;
+  background: rgba(247, 231, 190, 0.6);
+}
+#playground #comp-set .hero-card .hero-stats,
+#playground #your-set .hero-card .hero-stats {
+  margin: 20px 10px;
+  border-radius: 20px;
+  padding: 10px;
+  font-weight: 600;
+  background: rgba(0, 119, 123, 0.6);
+}
+#playground #comp-score,
+#playground #your-score {
+  font-size: 3rem;
+  color: #fe9e84;
+}
+#playground #result {
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(50, 64, 91, 0.8);
+  font: 800 3rem "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}/*# sourceMappingURL=superhero.css.map */

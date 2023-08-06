@@ -1,0 +1,102 @@
+@import "../css/variables";
+@import "../css/config";
+
+body {
+    min-height: 95vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: $sh-4;
+    background: $sh-1;
+}
+
+section {
+    margin: 20px;
+}
+
+#play-btn {
+    @include specialButton(map-get($font-size, M), $sh-3, $sh-2);
+}
+
+#shuffle-btn,
+#get-card-btn,
+#reset-btn {
+    @include specialButton(map-get($font-size, S), $sh-2, $sh-3);
+}
+
+#question-btn {
+    margin: 20px;
+    border: none;
+    font-size: map-get($font-size, M);
+    color: $sh-4;
+    background: transparent;
+    cursor: pointer;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+}
+
+#instructions {
+    padding: 30px 50px;
+    display: none;
+    color: $sh-1;
+    background: $sh-4;
+
+    h1 {
+        text-align: center;
+        color: $sh-2;
+
+        i {
+            color: $sh-3;
+        }
+    }
+}
+
+#playground {
+    @include playground;
+
+    #comp-set,
+    #your-set {
+        margin: 20px;
+        width: 700px;
+        height: 350px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+
+        .hero-card {
+            width: 225px;
+            height: 300px;
+            cursor: pointer;
+
+            .hero-name {
+                margin: 20px 10px;
+                border-radius: 20px;
+                padding: 10px;
+                font-weight: map-get($font-weight, L);
+                text-align: center;
+                color: $sh-3;
+                background: rgba($sh-4, 0.6);
+            }
+
+            .hero-stats {
+                margin: 20px 10px;
+                border-radius: 20px;
+                padding: 10px;
+                font-weight: map-get($font-weight, M);
+                background: rgba($sh-3, 0.6);
+            }
+        }
+    }
+
+    #comp-score,
+    #your-score {
+        font-size: map-get($font-size, L);
+        color: $sh-2;
+    }
+
+    #result {
+        @include result($sh-1);
+    }
+}

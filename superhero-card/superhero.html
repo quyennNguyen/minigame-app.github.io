@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Superhero Card</title>
+    <link rel="stylesheet" href="superhero.css" type="text/css">
+</head>
+
+<body>
+    <section id="playground">
+        <h1>
+            COMPUTER&nbsp;&nbsp;&nbsp;
+            <span id="comp-score">0</span>
+        </h1>
+        <div id="comp-set"></div>
+        <div id="your-set"></div>
+        <h1>
+            YOU&nbsp;&nbsp;&nbsp;
+            <span id="your-score">0</span>
+        </h1>
+        <h1 id="result"></h1>
+    </section>
+
+    <section id="playbuttons">
+        <button id="shuffle-btn">SHUFFLE</button>
+        <button id="get-card-btn">GET CARDS</button>
+        <button id="play-btn">PLAY</button>
+        <button id="reset-btn">RESET</button>
+    </section>
+
+    <section id="instructions">
+        <h1>
+            <i class="fa-solid fa-cloud"></i>
+            <i class="fa-solid fa-dragon"></i>
+            INSTRUCTIONS
+            <i class="fa-solid fa-dragon"></i>
+            <i class="fa-solid fa-cloud"></i>
+        </h1>
+        <br>
+        <ol>
+            <li>Press SHUFFLE to retrieve random heros for each party</li>
+            <li>Press GET CARDS to show each party's heros</li>
+            <li>Press PLAY until one of you is defeated</li>
+            <li>Press CLEAR to reset game</li>
+        </ol>
+        <br>
+        <p><em>RULE:</em> Card with a higher SUM of STATS WINs!</p>
+    </section>
+
+    <button id="question-btn">
+        <i class="fa-regular fa-circle-question"></i>
+    </button>
+
+    <script src="https://kit.fontawesome.com/d83c12719b.js" crossorigin="anonymous"></script>
+    <script src="superhero.js"></script>
+</body>
+
+</html>

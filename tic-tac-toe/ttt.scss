@@ -1,0 +1,85 @@
+@import "../css/variables";
+@import "../css/config";
+
+body {
+    min-height: 95vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: $ttt-4;
+    background: $ttt-1;
+}
+
+section {
+    margin: 20px;
+}
+
+form select {
+    margin: 5px 20px;
+    border: solid;
+    border-radius: 20px;
+    padding: 5px 20px;
+    font-size: map-get($font-size, S);
+    font-weight: map-get($font-weight, M);
+    color: $ttt-3;
+    background: transparent;
+    outline: none;
+}
+
+#play-btn {
+    @include specialButton(map-get($font-size, M), $ttt-3, $ttt-2);
+}
+
+#reset-btn {
+    @include specialButton(map-get($font-size, S), $ttt-2, $ttt-3);
+}
+
+#playground {
+    @include playground;
+
+    table {
+        margin: 20px;
+        border-collapse: collapse;
+        text-align: center;
+        font-size: map-get($font-size, L);
+        color: $ttt-2;
+
+        tbody {
+            tr {
+                td {
+                    border: 3px solid $ttt-3;
+                    width: 150px;
+                    height: 150px;
+                    cursor: pointer;
+
+                    &:first-child {
+                        border-left: none;
+                    }
+
+                    &:last-child {
+                        border-right: none;
+                    }
+                }
+
+                &:first-child>td {
+                    border-top: none;
+                }
+
+                &:last-child>td {
+                    border-bottom: none;
+                }
+            }
+        }
+    }
+
+    #comp-weapon,
+    #your-weapon {
+        font-size: map-get($font-size, L);
+        color: $ttt-2;
+    }
+
+    #result {
+        @include result($ttt-1);
+    }
+}

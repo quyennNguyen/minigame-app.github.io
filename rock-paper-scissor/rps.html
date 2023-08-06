@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roc Paper Scissor</title>
+    <link rel="stylesheet" href="rps.css" type="text/css">
+</head>
+
+<body>
+    <section>
+        <form onsubmit="return false">
+            <label>Number of Rounds
+                    <button id="increase"> + </button>
+                    <h1 id="num-of-rounds">1</h1>
+                    <button id="decrease"> - </button>
+            </label>
+        </form>
+    </section>
+
+    <section id="playground">
+        <h1>
+            COMPUTER&nbsp;&nbsp;&nbsp;
+            <span id="comp-score">0</span>
+        </h1>
+        <div id="comp-set">
+            <button id="comp-rock">
+                <i class="fa-regular fa-hand-back-fist"></i>
+            </button>
+            <button id="comp-paper">
+                <i class="fa-regular fa-hand"></i>
+            </button>
+            <button id="comp-scissor">
+                <i class="fa-regular fa-hand-scissors"></i>
+            </button>
+        </div>
+        <div id="your-set">
+            <button id="your-rock">
+                <i class="fa-regular fa-hand-back-fist"></i>
+            </button>
+            <button id="your-paper">
+                <i class="fa-regular fa-hand"></i>
+            </button>
+            <button id="your-scissor">
+                <i class="fa-regular fa-hand-scissors"></i>
+            </button>
+        </div>
+        <h1>
+            YOU&nbsp;&nbsp;&nbsp;
+            <span id="your-score">0</span>
+        </h1>
+        <h1 id="result"></h1>
+    </section>
+
+    <section>
+        <button id="play-btn">PLAY</button>
+        <button id="reset-btn">RESET</button>
+    </section>
+
+    <script src="https://kit.fontawesome.com/d83c12719b.js" crossorigin="anonymous"></script>
+    <script src="rps.js"></script>
+</body>
+
+</html>

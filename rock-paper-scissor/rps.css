@@ -1,0 +1,100 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 95vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: #e9c46a;
+  background: #264653;
+}
+
+section {
+  margin: 20px;
+}
+
+form button {
+  margin: 10px;
+  border: none;
+  color: #e76f51;
+  background: transparent;
+  cursor: pointer;
+  font: 600 2rem "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+form h1 {
+  display: inline-block;
+}
+
+#play-btn {
+  font-size: 2rem;
+  color: #2a9d8f;
+  background: #e76f51;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#play-btn:active {
+  background: rgba(231, 111, 81, 0.5);
+}
+
+#reset-btn {
+  font-size: 1.25rem;
+  color: #e76f51;
+  background: #2a9d8f;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#reset-btn:active {
+  background: rgba(42, 157, 143, 0.5);
+}
+
+#playground {
+  margin: 50px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#playground button {
+  margin: 50px;
+  border: none;
+  font-size: 4rem;
+  color: #2a9d8f;
+  background: transparent;
+  cursor: pointer;
+}
+#playground #your-rock:active,
+#playground #your-paper:active,
+#playground #your-scissor:active {
+  color: #e76f51;
+}
+#playground #comp-score,
+#playground #your-score {
+  font-size: 3rem;
+  color: #e76f51;
+}
+#playground #result {
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(38, 70, 83, 0.8);
+  font: 800 3rem "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}/*# sourceMappingURL=rps.css.map */

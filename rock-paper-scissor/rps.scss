@@ -1,0 +1,70 @@
+@import "../css/variables";
+@import "../css/config";
+
+body {
+    min-height: 95vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    color: $rps-4;
+    background: $rps-1;
+}
+
+section {
+    margin: 20px;
+}
+
+form {
+    button {
+        margin: 10px;
+        border: none;
+        color: $rps-2;
+        background: transparent;
+        cursor: pointer;
+        @include subtitle;
+    }
+
+    h1 {
+        display: inline-block;
+    }
+}
+
+#play-btn {
+    @include specialButton(map-get($font-size, M), $rps-3, $rps-2);
+}
+
+#reset-btn {
+    @include specialButton(map-get($font-size, S), $rps-2, $rps-3);
+}
+
+#playground {
+    @include playground;
+
+    button {
+        margin: 50px;
+        border: none;
+        font-size: 4rem;
+        color: $rps-3;
+        background: transparent;
+        cursor: pointer;
+    }
+
+    #your-rock,
+    #your-paper,
+    #your-scissor {
+        &:active {
+            color: $rps-2;
+        }
+    }
+
+    #comp-score,
+    #your-score {
+        font-size: map-get($font-size, L);
+        color: $rps-2;
+    }
+
+    #result {
+        @include result($rps-1);
+    }
+}

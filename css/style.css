@@ -1,0 +1,35 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav {
+  margin: 20px;
+  min-height: 90vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+}
+nav a {
+  margin: 30px;
+  border: solid;
+  padding: 20px;
+  width: 400px;
+  text-align: center;
+  text-decoration: none;
+  color: #000000;
+  font: 600 2rem "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+nav a:hover {
+  background: #a0a1a4;
+  transform: scale(1.25);
+}
+
+footer {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}/*# sourceMappingURL=style.css.map */

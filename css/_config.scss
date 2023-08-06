@@ -1,0 +1,59 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+@mixin title {
+    font: map-get($font-weight, L) map-get($font-size, L) $font-family;
+}
+
+@mixin subtitle {
+    font: map-get($font-weight, M) map-get($font-size, M) $font-family;
+}
+
+@mixin body {
+    font: map-get($font-weight, S) map-get($font-size, S) $font-family;
+}
+
+@mixin button {
+    margin: 10px;
+    border: none;
+    border-radius: 20px;
+    padding: 15px 20px;
+    font-weight: map-get($font-weight, M);
+    cursor: pointer;
+}
+
+@mixin specialButton($font, $color, $background) {
+    font-size: $font;
+    color: $color;
+    background: $background;
+    @include button;
+
+    &:active {
+        background: rgba($background, 0.5);
+    }
+}
+
+@mixin playground {
+    margin: 50px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+@mixin result($background) {
+    width: 100%;
+    height: 100%;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba($background, 0.8);
+    @include title;
+}

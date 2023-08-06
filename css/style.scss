@@ -1,0 +1,34 @@
+@import "variables";
+@import "config";
+
+nav {
+    margin: 20px;
+    min-height: 90vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+
+    a {
+        margin: 30px;
+        border: solid;
+        padding: 20px;
+        width: 400px;
+        text-align: center;
+        text-decoration: none;
+        color: $dark;
+        @include subtitle;
+
+        &:hover {
+            background: $mid-color;
+            transform: scale(1.25);
+        }
+    }
+}
+
+footer {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

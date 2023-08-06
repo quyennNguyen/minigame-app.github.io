@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 95vh;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  color: #5affe7;
+  background: #726eff;
+}
+
+section {
+  margin: 20px;
+}
+
+form select {
+  margin: 5px 20px;
+  border: solid;
+  border-radius: 20px;
+  padding: 5px 20px;
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #37465b;
+  background: transparent;
+  outline: none;
+}
+
+#play-btn {
+  font-size: 2rem;
+  color: #37465b;
+  background: #fff685;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#play-btn:active {
+  background: rgba(255, 246, 133, 0.5);
+}
+
+#reset-btn {
+  font-size: 1.25rem;
+  color: #fff685;
+  background: #37465b;
+  margin: 10px;
+  border: none;
+  border-radius: 20px;
+  padding: 15px 20px;
+  font-weight: 600;
+  cursor: pointer;
+}
+#reset-btn:active {
+  background: rgba(55, 70, 91, 0.5);
+}
+
+#playground {
+  margin: 50px;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+#playground table {
+  margin: 20px;
+  border-collapse: collapse;
+  text-align: center;
+  font-size: 3rem;
+  color: #fff685;
+}
+#playground table tbody tr td {
+  border: 3px solid #37465b;
+  width: 150px;
+  height: 150px;
+  cursor: pointer;
+}
+#playground table tbody tr td:first-child {
+  border-left: none;
+}
+#playground table tbody tr td:last-child {
+  border-right: none;
+}
+#playground table tbody tr:first-child > td {
+  border-top: none;
+}
+#playground table tbody tr:last-child > td {
+  border-bottom: none;
+}
+#playground #comp-weapon,
+#playground #your-weapon {
+  font-size: 3rem;
+  color: #fff685;
+}
+#playground #result {
+  width: 100%;
+  height: 100%;
+  display: none;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(114, 110, 255, 0.8);
+  font: 800 3rem "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}/*# sourceMappingURL=ttt.css.map */
