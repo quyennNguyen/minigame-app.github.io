@@ -1,1 +1,1 @@
-Link to page: https://quyennnguyen.github.io/game-app.github.io/
+Link to page: https://quyennnguyen.github.io/minigame-app.github.io/
