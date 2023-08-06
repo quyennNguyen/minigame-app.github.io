@@ -2,6 +2,7 @@
 @import "../css/config";
 
 body {
+    min-width: 800px;
     min-height: 95vh;
     display: flex;
     flex-flow: column;

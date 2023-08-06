@@ -4,6 +4,10 @@
   padding: 0;
 }
 
+body {
+  min-width: 800px;
+}
+
 nav {
   margin: 20px;
   min-height: 90vh;
